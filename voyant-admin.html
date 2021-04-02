@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+		<link href="http://media.michaelkronenberg.com/site-graphics/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a190f213ce.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/custom.css">
+
+    <title>Michael Kronenberg | Product UX/UI Designer</title>
+  </head>
+  <body data-spy="scroll" data-target="#scrollspy-nav" data-offset="75" class="position-relative page-set-up">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-lockup">
+        <img src="http://media.michaelkronenberg.com/site-graphics/mk-logo-square.svg" class="logo-icon">
+        <div class="wordmark-lockup">
+          <a href="index.html" class="stretched-link my-name">MICHAEL KRONENBERG</a>
+          <p class="title">Product UX/UI Designer</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="multi-product-article-grid">
+    
+      <!-- Company -->
+      <div class="company">
+        <h6 class="mb-0 text-muted">COMPANY</h6>
+        <h1 class="display-4 font-weight-normal">Voyant</h1>
+      </div>
+
+      <!-- product-switcher -->
+      <div class="product-switcher">
+        <h6 class="mb-3 text-muted">PRODUCTS</h6>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="voyant-conferencing.html"><i class="fas fa-video"></i> Conferencing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voyant-voicemail.html"><i class="fas fa-voicemail"></i> Visual Voicemail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="voyant-admin.html"><i class="fas fa-cog"></i> Telecom Admin</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- table-of-contents -->
+      <div class="table-of-contents">
+        <nav id="scrollspy-nav" class="sticky-top pt-4">
+          <h6 class="text-muted mb-0">CASE STUDY</h6>
+          <h5>Number Purchasing</h5>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">Background</a>
+            <!-- <a class="nav-link" href="#item-3">Personas</a> -->
+            <a class="nav-link" href="#item-4">Research</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#item-4-1">Customer Interviews</a>
+              <a class="nav-link ml-3 my-1" href="#item-4-2">Reference Material</a>
+            </nav>
+            <a class="nav-link" href="#item-5">UX Solutions</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#item-5-1">Search Fields</a>
+              <a class="nav-link ml-3 my-1" href="#item-5-2">Return Methods</a>
+            </nav>
+          </nav>
+        </nav>
+      </div>
+
+      <div class="main-content pt-4">
+
+        <div class="bg-light overflow-hidden px-lg-5 px-2 pb-0" style="max-height: 50vh;">
+          <img src="images/projects/voyant/admin/admin-preview@2x.png" class="mx-auto d-block img-fluid mt-3" alt="">
+        </div>
+        <!-- Background -->
+        <section >
+          <h3 id="item-1" class="mt-5 mb-4">Background</h3>
+          <p>Voyant Admin is a tool for enterprise and wholesale telecom administrators to manage their account with Voyant. Admins can use the tool to set up SIP Trunking voice service, or build their own telecom solution using our public APIs. Users of this platform are highly trained in the world of telecom and expect features that allow to them design a system based on their needs.</p>
+          <h4 class="mt-5 mb-4">Problem</h4>
+          <h5>Under-delivered product launch</h5>
+          <p>Voyant admin launched as the modern interface for a new SIP trunking platform. While the company had many years of experience selling SIP Trunking as a product it made a series of mistakes with the launch of the new product.</p>
+          <ul>
+            <li>Product strategy decisions changed too frequently. The platform began as the administrative tool for only enterprise SIP trunking, but grew to be the platform for all products and customer types.</li>
+            <li>Access to existing tools was revoked before feature parity could be built into Voyant Admin. Wholesale and resale partners lost vital tools to run their business.</li>
+            <li>The company lacked any internal product documentation from previous platforms, nor were product requirements written before beginning development.</li>
+            <li>The development teams lacked direction from product managers. Each dev team dictacted their own priorities and product requirements.</li>
+          </ul>
+          <h5>Leaning on customer operations to take up the slack</h5>
+          <p>To bypass the shortcomings of Voyant Admin, we leaned on the customer operations team to do manual tasks. Customers were directed to contact the operations team instead of attempting to use the interface.</p>
+        </section>
+        <hr class="my-5">
+
+        <!-- Personas -->
+        <section class="d-none">
+          <h3 id="item-3" class="mt-5 mb-4">Personas</h3>
+          <div class="card">
+            <div class="card-header">
+              <!-- Nav tabs -->
+              <ul class="nav nav-pills card-header-pills" id="personasTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="enterprise-tab" data-toggle="tab" href="#enterprise" role="tab" aria-controls="enterprise" aria-selected="true">Enterprise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="wholesale-tab" data-toggle="tab" href="#wholesale" role="tab" aria-controls="wholesale" aria-selected="false">Wholesale</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner" aria-selected="false">Partner</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content p-4">
+              <div class="tab-pane active" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
+                <div class="row align-items-center mb-4">
+                  <div class="col-sm-3 col-4">
+                    <img src="http://placekitten.com/200/200" class="rounded-circle img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-9 col-8">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dt>Name</dt>
+                        <dd>James Franco</dd>
+                        <dt>Job Title</dt>
+                        <dd>IT Admin</dd>
+                      </div>
+                      <div class="col-sm-6">
+                        <dt>Employer</dt>
+                        <dd>Merrill Lynch</dd>
+                        <dt></dt>
+                        <dd></dd>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <dl class="row">
+                    <dt class="col-sm-3">Goals</dt>
+                    <dd class="col-sm-9">
+                      <ul class="pl-3">
+                        <li>Purchasing phone numbers as the company expands</li>
+                        <li>Managing the extension dialing setup for their office</li>
+                        <li>Creating IVR (<a href="https://en.wikipedia.org/wiki/Interactive_voice_response" target="_blank">Interactive Voice Response</a>) menus for departments</li>
+                        <li>Managing outbound caller names</li>
+                        <li>Managing emergency registrations</li>
+                      </ul>
+                    </dd>
+
+                    <dt class="col-sm-3">Motivations</dt>
+                    <dd class="col-sm-9">
+                      <p>A company's telecom system is just one of many responsiblities that an IT department has. Managing SIP trunking services happens in multiple places, most which is on the interface for their PBX (Private Branch Exchange). In general, they don't need to be in Voyant Admin very often, so they're not going to learn to be experts at it.</p>
+                    </dd>
+
+                    <dt class="col-sm-3">Frustrations</dt>
+                    <dd class="col-sm-9">Management of a telecom system happens on many different platforms and there's no central tool to sync them.</dd>
+
+                  </dl>
+              </div>
+              <div class="tab-pane" id="wholesale" role="tabpanel" aria-labelledby="wholesale-tab">
+                <div class="row align-items-center mb-4">
+                  <div class="col-sm-3 col-4">
+                    <img src="http://placekitten.com/200/200" class="rounded-circle img-fluid" alt="...">
+                  </div>
+                  <div class="col-sm-9 col-8">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dt>Name</dt>
+                        <dd>James Franco</dd>
+                        <dt>Job Title</dt>
+                        <dd>IT Admin</dd>
+                      </div>
+                      <div class="col-sm-6">
+                        <dt>Employer</dt>
+                        <dd>Merrill Lynch</dd>
+                        <dt></dt>
+                        <dd></dd>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <dl class="row">
+                  <dt class="col-sm-3">Goals</dt>
+                  <dd class="col-sm-9">
+                    <ul class="pl-3">
+                      <li>Purchasing phone numbers as the company expands</li>
+                      <li>Managing the extension dialing setup for their office</li>
+                      <li>Creating IVR (<a href="https://en.wikipedia.org/wiki/Interactive_voice_response" target="_blank">Interactive Voice Response</a>) menus for departments</li>
+                      <li>Managing outbound caller names</li>
+                      <li>Managing emergency registrations</li>
+                    </ul>
+                  </dd>
+
+                  <dt class="col-sm-3">Motivations</dt>
+                  <dd class="col-sm-9">
+                    <p>A company's telecom system is just one of many responsiblities that an IT department has. Managing SIP trunking services happens in multiple places, most which is on the interface for their PBX (Private Branch Exchange). In general, they don't need to be in Voyant Admin very often, so they're not going to learn to be experts at it.</p>
+                  </dd>
+
+                  <dt class="col-sm-3">Frustrations</dt>
+                  <dd class="col-sm-9">Management of a telecom system happens on many different platforms and there's no central tool to sync them.</dd>
+
+                </dl>
+              </div>
+              <div class="tab-pane" id="partner" role="tabpanel" aria-labelledby="partner-tab">...</div>
+            </div>
+          </div>
+          <hr class="my-5">
+        </section>
+
+        <!-- Research -->
+        <section>
+          <h3 id="item-4" class="mt-5 mb-4">Research</h3>
+          
+          <!-- Customer Interviews -->
+          <section>
+            <h4 id="item-4-1" class="mb-4">Customer Interviews</h4>
+            <p>Since the existing iteration was built without customer input, we began a listening campaign by reaching out to customers for feedback.</p>
+            <p>In our conversations we learned that our customers have very specific needs when purchasing numbers. At the scale of reselling that they do, free local calling does not exist. Therefore they are always looking to purchase numbers to connect calls as cheaply as possible.</p>
+            <h5>Gathering User Stories</h5>
+            <div class="admin-user-stories">
+              <div class="card">
+                <h5 class="card-header">User Story 1</h5>
+                <div class="card-body">
+                  <p><em class="text-muted">As a </em>customer administrator, <em class="text-muted">I need to</em> search for numbers in my city, <em class="text-muted">so I can</em> find local numbers in a large city independent of rate center or area code.</p>
+                  <h6>Acceptance Criteria</h6>
+                  <ul class="mb-0">
+                    <li>City & State or Postal Code must be entered to perform search</li>
+                    <li>Postal Code overrides City & State if both are entered</li>
+                    <li>City suggestions should appear on the third input character</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">User Story 2</h5>
+                <div class="card-body">
+                  <p><em class="text-muted">As a </em>customer administrator, <em class="text-muted">I need to</em> search for numbers in a <a href="https://en.wikipedia.org/wiki/Rate_center" target="_blank">rate center</a>, <em class="text-muted">so I can</em> make local calls within a specified geographic area.</p>
+                  <h6>Acceptance Criteria</h6>
+                  <ul class="mb-0">
+                    <li>User can optionally use a state selector</li>
+                    <li>Rate Center suggestions should appear on the third input character</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">User Story 3</h5>
+                <div class="card-body">
+                  <p><em class="text-muted">As a </em>customer administrator, <em class="text-muted">I need to</em> purchase numbers that match the <a href="https://en.wikipedia.org/wiki/North_American_Numbering_Plan#Modern_plan" target="_blank">NPA-NXX-Block</a> of my current inventory, <em class="text-muted">so I can</em> add to my single location extension dialing plan <em class="text-muted">and</em> avoid creating a new dial based off a new NPA-NXX-Block</p>
+                  <h6>Acceptance Criteria</h6>
+                  <ul class="mb-0">
+                    <li>Users must be able to initiate a search with the first 5 to 7 digits entered</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <h5 class="card-header">User Story 4</h5>
+                <div class="card-body">
+                  <p><em class="text-muted">As a </em>customer administrator, <em class="text-muted">I need to</em> purchase compatible numbers for our extension dialing set-up across offices in multiple geographic areas, <em class="text-muted">so I can</em> avoid having to assign an extension override that differs from the last (3-5) digits of the number.</p>
+                  <h6>Acceptance Criteria</h6>
+                  <ul class="mb-0">
+                    <li>Users must be able to initiate a number search with empty digits in the middle of the number</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr class="my-5">
+
+          <!-- Reference Material -->
+          <section>
+            <h4 id="item-4-1" class="mt-5 mb-4">Reference Material</h4>
+            <h5>Inteliquent API Guide</h5>
+            <p>Our number inventory was sourced entirely from our parent company, Inteliquent. By referencing it, we found that the requested functionality was already available.</p>
+            
+            <!-- Voyant API Guide -->
+            <div class="card bg-light">
+              <div class="card-header">
+                Search Telephone Number Inventory
+              </div>
+              <div class="card-body">
+                <p>Now we can perform search in multiple ways like rate center, city/zip and postal code search along with radius or sequential or local area option.</p>
+                <p>We can perform search as mentioned below</p>
+                <ul>
+                  <li>Addition of the “City/State” and “City/State with Radius” searches</li>
+                  <li>Addition of the “Postal Code” and “Postal Code with Radius” searches</li>
+                  <li>Addition of the local option within a subset of the searches like “Rate Center” or “City/State” or “Postal Code”</li>
+                  <li>Addition of an option to toggle between Wireless or Wireline search</li>
+                </ul>
+                <h6>Telephone Number Search Rules</h6>
+                <ul>
+                  <li><code>tnMask</code> or <code>tnWildcard</code> are required (even if searching for all TNs). <code>tnMask</code> takes priority if both are specified.</li>
+                  <li><code>rateCenter</code>, <code>city</code>, and <code>postalCode</code> are mutually exclusive.</li>
+                  <li>If <code>city</code> is specified, the <code>province</code> must be specified.</li>
+                  <li><code>radius</code> is only valid if <code>city</code> and <code>province</code> or <code>postalCode</code> are specified.</li>
+                  <li><code>radius</code>, <code>localCallingArea</code>, and <code>sequential</code> are mutually exclusive.</li>
+                  <li>In case of <code>localCallingArea</code>, NPA-NXX takes priority if <code>city</code> or <code>province</code> or <code>rateCenter</code> specified.</li>
+                  <li>If <code>localCallingArea</code> is specified, one of the following must be true:</li>
+                  <ul>
+                    <li><code>tnMask</code> or <code>tnWildcard</code> specify the NPA-NXX (first six digits)</li>
+                    <li><code>rateCenter</code> is specified</li>
+                    <li><code>city</code> and <code>province</code> are specified (without a <code>radius</code>)</li>
+                    <li><code>postalCode</code> is specified (without a <code>radius</code>)</li>
+                  </ul>
+                  <li>If <code>wireless</code> is specified, the customer must be configured to allow ordering wireless TNs.</li>
+                </ul>
+
+                <!-- Parameter Table -->
+                <table class="table table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Parameter</th>
+                      <th scope="col">Required</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>tnMask</code></td>
+                      <td>Yes*</td>
+                      <td>Telephone number, Must be exactly 10 characters.<br>
+                        Accepts numbers <kbd>0</kbd> through <kbd>9</kbd> . Enter <kbd>x</kbd> or <kbd>X</kbd> or <kbd>space</kbd> as wildcard. (e.g. <kbd>312xxxxxxx</kbd> , <kbd>xxx4xxxxx1</kbd> , <kbd>xxxxxxxxxx</kbd> )</td>
+                    </tr>
+                    <tr>
+                      <td><code>tnWildcard</code></td>
+                      <td>Yes*</td>
+                      <td>Telephone number. Accepts 0-9, Aa-Zz, *, or ? (e.g. <kbd>*Hello*</kbd> or <kbd>312?Hi*7</kbd> )</td>
+                    </tr>
+                    <tr>
+                      <td><code>lata</code></td>
+                      <td>No</td>
+                      <td>Three-digit local access and transport area code</td>
+                    </tr>
+                    <tr>
+                      <td><code>rateCenter</code></td>
+                      <td>No</td>
+                      <td>Rate center abbreviation (e.g. <kbd>WSHNGTNZN1</kbd> )</td>
+                    </tr>
+                    <tr>
+                      <td><code>province</code></td>
+                      <td>No</td>
+                      <td>Two-letter state or province abbreviation (e.g. <kbd>IL</kbd> , <kbd>CA</kbd> )</td>
+                    </tr>
+                    <tr>
+                      <td><code>city</code></td>
+                      <td>No</td>
+                      <td>Name of the City to search for numbers</td>
+                    </tr>
+                    <tr>
+                      <td><code>postalCode</code></td>
+                      <td>No</td>
+                      <td>Postal Code to search for numbers</td>
+                    </tr>
+                    <tr>
+                      <td><code>radius</code></td>
+                      <td>No</td>
+                      <td>Radius to search for numbers within specified limit. Maximum acceptable value: 50 (miles)</td>
+                    </tr>
+                    <tr>
+                      <td><code>quantity</code></td>
+                      <td>No</td>
+                      <td>Maximum number of results to return; partial quantity may be returned based on inventory</td>
+                    </tr>
+                    <tr>
+                      <td><code>sequential</code></td>
+                      <td>No</td>
+                      <td>Enter <kbd>true</kbd> to return sequential numbers (up to 99)</td>
+                    </tr>
+                    <tr>
+                      <td><code>wireless</code></td>
+                      <td>No</td>
+                      <td>Enter <kbd>Y</kbd> or <kbd>N</kbd> to retrieve wireless or wireline numbers.</td>
+                    </tr>
+                    <tr>
+                      <td><code>localCallingArea</code></td>
+                      <td>No</td>
+                      <td>Enter <kbd>Y</kbd> or <kbd>N</kbd> to retrieve local calling area numbers.</td>
+                    </tr>
+                    <tr>
+                      <td><code>searchOnNetOnly</code></td>
+                      <td>No</td>
+                      <td>Enter <kbd>Y</kbd> or <kbd>N</kbd> to include or exclude offnet numbers from search results.</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <small class="text-muted">* Either tnMask or tnWildcard are required</small>
+                
+                <!-- tnWildcard Interpretations Table -->
+                <table class="table table-hover mt-5" style="max-width: 360px;">
+                  <thead>
+                    <tr class="thead-light">
+                      <th scope="col" colspan="2"><code>tnWildcard</code> interpretations</th>
+                    </tr>
+                    <tr>
+                      <th scope="col">Character</th>
+                      <th scope="col">Interpretation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0 - 9</td>
+                      <td>No translation</td>
+                    </tr>
+                    <tr>
+                      <td>Aa - Cc</td>
+                      <td>Translated to 2</td>
+                    </tr>
+                    <tr>
+                      <td>Dd - Ff</td>
+                      <td>Translated to 3</td>
+                    </tr>
+                    <tr>
+                      <td>Gg - Ii</td>
+                      <td>Translated to 4</td>
+                    </tr>
+                    <tr>
+                      <td>Jj - Ll</td>
+                      <td>Translated to 5</td>
+                    </tr>
+                    <tr>
+                      <td>Mm - Oo</td>
+                      <td>Translated to 6</td>
+                    </tr>
+                    <tr>
+                      <td>Pp - Ss</td>
+                      <td>Translated to 7</td>
+                    </tr>
+                    <tr>
+                      <td>Tt - Vv</td>
+                      <td>Translated to 8</td>
+                    </tr>
+                    <tr>
+                      <td>Ww - Zz</td>
+                      <td>Translated to 9</td>
+                    </tr>
+                    <tr>
+                      <td>*</td>
+                      <td>Any character sequence</td>
+                    </tr>
+                    <tr>
+                      <td>?</td>
+                      <td>Any single character</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- UX Solution -->
+        <section>
+          <h3 id="item-5" class="mt-5 mb-4">UX Solutions</h3>
+
+          <!-- Search Fields -->
+          <section>
+            <h4 id="item-5-1">Existing Number Search Fields</h4>
+            <img src="images/projects/voyant/admin/before/before-number-search.svg" class="img-fluid" width="756px">
+            <h6 class="text-danger mt-4 mb-2"><i class="fas fa-ban"></i> Problems</h6>
+            <div class="article-three-column">
+              <div>
+                <dt>Does not address all identified user stories</dt>
+                <dd>Customers need to search by <code>rateCenter</code>. This functionality is completely missing</dd>
+              </div>
+              <div>
+                <dt>Unsupported functionality</dt>
+                <dd>The design appears to allow users to search by <code>address</code>. A parameter not supported by the API</dd>
+              </div>
+              <div>
+                <dt>Unsurfaced functionality</dt>
+                <dd>Users could perform a <code>tnMask</code> or <code>tnWildcard</code> search by entering them in the area code field. However users didn't know about it.</dd>
+              </div>
+            </div>
+            <hr class="my-5">
+            <h4 class="mt-5">Updated Number Search Fields</h4>
+            <iframe
+              class="figma-number-search"
+              style="border: none;" 
+              width="100%" 
+              height="450" 
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6Mnx6Wjs1Nu6UxbvT8ZuZ2%2FVA-Numbers-Search-Bar%3Fnode-id%3D6%253A20365%26viewport%3D-2119%252C-359%252C0.25%26scaling%3Dmin-zoom" 
+              allowfullscreen>
+            </iframe>
+          </section>
+          <hr class="my-5">
+
+          <!-- Search Return Methods -->
+          <section>
+            <h4 id="item-5-2">Search Return Methods</h4>
+            <h5 class="mt-3">Standard</h5>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dd>This is the standard return method that was previously used for all types of searches.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/admin/after/results-regular-local-location@2x.png" class="fig-img">
+              </div>
+            </figure>
+            <h5 class="mt-5">Sequential</h5>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dd>Instead of returning individual numbers, entire blocks are returned.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/admin/after/return-sequential-blocks@2x.png" class="fig-img">
+              </div>
+            </figure>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dd>Users can open a block to look at the numbers individually.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/admin/after/return-sequential-block-detail@2x.png" class="fig-img">
+              </div>
+            </figure>
+            <h5 class="mt-5">Vanity</h5>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dd>The vanity search is time is highlighted inside the number.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/admin/after/return-local-vanity@2x.png" class="fig-img">
+              </div>
+            </figure>
+          </section>
+        </section>
+      
+      </div>  
+
+    </main>
+
+    <!-- Footer -->
+		<footer class="bg-dark mt-3 pt-4 pb-5 text-light footer">
+			<ul class="nav">
+				<li class="nav-item">
+			    <a class="nav-link text-light" href="mailto:m.r.kronenberg@gmail.com">Email</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-light" href="https://www.linkedin.com/in/mkronenberg/" target="_blank">LinkedIn</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-light" href="https://github.com/mkronenberg" target="_blank">GitHub</a>
+			  </li>
+			</ul>
+		</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

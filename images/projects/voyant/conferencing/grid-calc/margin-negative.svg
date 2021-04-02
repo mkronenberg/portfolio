@@ -1,0 +1,40 @@
+<svg width="340" height="209" viewBox="0 0 340 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="340" height="209" rx="4" fill="#DC3545" fill-opacity="0.1"/>
+<path d="M260 0H336C338.209 0 340 1.79086 340 4V205C340 207.209 338.209 209 336 209H260V0Z" fill="#DC3545" fill-opacity="0.3"/>
+<rect x="10" y="43" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<rect x="10" y="109.25" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<rect x="120" y="43" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<rect x="120" y="109.25" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<rect x="230" y="43" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<rect x="230" y="109.25" width="100" height="56.25" rx="4" fill="#DC3545" fill-opacity="0.7"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="260" y="43" width="70" height="57">
+<path d="M260 43H326C328.209 43 330 44.7909 330 47V95.25C330 97.4591 328.209 99.25 326 99.25H260V43Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<line x1="207.854" y1="80.5355" x2="295.536" y2="-7.1457" stroke="black" stroke-width="6"/>
+<line x1="216.34" y1="89.0208" x2="304.021" y2="1.33958" stroke="black" stroke-width="6"/>
+<line x1="224.825" y1="97.5061" x2="312.506" y2="9.82485" stroke="black" stroke-width="6"/>
+<line x1="233.31" y1="105.991" x2="320.991" y2="18.3101" stroke="black" stroke-width="6"/>
+<line x1="241.795" y1="114.477" x2="329.477" y2="26.7954" stroke="black" stroke-width="6"/>
+<line x1="250.281" y1="122.962" x2="337.962" y2="35.2807" stroke="black" stroke-width="6"/>
+<line x1="258.766" y1="131.447" x2="346.447" y2="43.766" stroke="black" stroke-width="6"/>
+<line x1="267.251" y1="139.933" x2="354.932" y2="52.2513" stroke="black" stroke-width="6"/>
+<line x1="275.737" y1="148.418" x2="363.418" y2="60.7365" stroke="black" stroke-width="6"/>
+<line x1="284.222" y1="156.903" x2="371.903" y2="69.2218" stroke="black" stroke-width="6"/>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="260" y="109" width="70" height="57">
+<path d="M260 109.25H326C328.209 109.25 330 111.041 330 113.25V161.5C330 163.709 328.209 165.5 326 165.5H260V109.25Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<line x1="207.854" y1="146.786" x2="295.536" y2="59.1043" stroke="black" stroke-width="6"/>
+<line x1="216.34" y1="155.271" x2="304.021" y2="67.5896" stroke="black" stroke-width="6"/>
+<line x1="224.825" y1="163.756" x2="312.506" y2="76.0749" stroke="black" stroke-width="6"/>
+<line x1="233.31" y1="172.241" x2="320.991" y2="84.5601" stroke="black" stroke-width="6"/>
+<line x1="241.795" y1="180.727" x2="329.477" y2="93.0454" stroke="black" stroke-width="6"/>
+<line x1="250.281" y1="189.212" x2="337.962" y2="101.531" stroke="black" stroke-width="6"/>
+<line x1="258.766" y1="197.697" x2="346.447" y2="110.016" stroke="black" stroke-width="6"/>
+<line x1="267.251" y1="206.183" x2="354.932" y2="118.501" stroke="black" stroke-width="6"/>
+<line x1="275.737" y1="214.668" x2="363.418" y2="126.987" stroke="black" stroke-width="6"/>
+<line x1="284.222" y1="223.153" x2="371.903" y2="135.472" stroke="black" stroke-width="6"/>
+</g>
+</svg>

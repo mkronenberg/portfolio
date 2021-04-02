@@ -1,0 +1,92 @@
+.page-set-up {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 5em auto 8em;
+    grid-template-areas: 
+        "head   head    head"
+        ".      main    ."
+        "footer footer  footer";
+}
+
+header {grid-area: head;}
+
+main {grid-area: main;}
+
+footer {grid-area: footer;}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.multi-product-article-grid {
+    display: grid;
+    grid-template-columns: 3fr, 9fr;
+    grid-gap: 0 2em;
+    grid-template-areas: 
+        "company               products"
+        "table-of-contents     case-study";
+}
+
+.single-product-article-grid {
+    display: grid;
+    grid-template-columns: 3fr, 9fr;
+    grid-gap: 0 2em;
+    grid-template-areas: 
+        "table-of-contents     company"
+        "table-of-contents     case-study";
+}
+
+.company {
+    grid-area: company;
+    padding-top: 2em;
+}
+
+.product-switcher {
+    grid-area: products;
+    padding-top: 2em;
+}
+
+.table-of-contents {
+    grid-area: table-of-contents;
+}
+
+.main-content {
+    grid-area: case-study;
+    overflow-x: scroll;
+}
+
+@media only screen and (max-width: 1140px) {
+    
+    .page-set-up {
+        grid-template-columns: 2em 1fr 2em;
+    }
+
+    .multi-product-article-grid {
+        grid-gap: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .table-of-contents {
+        display: none;
+    }
+    
+    .multi-product-article-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "company"       
+            "products"
+            "case-study";
+    }
+
+    .single-product-article-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "company"       
+            "case-study";
+    }
+}

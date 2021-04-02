@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+		<link href="http://media.michaelkronenberg.com/site-graphics/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a190f213ce.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/custom.css">
+
+    <title>Michael Kronenberg | Product UX/UI Designer</title>
+  </head>
+  <body data-spy="scroll" data-target="#scrollspy-nav" data-offset="75" class="position-relative page-set-up">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-lockup">
+        <img src="http://media.michaelkronenberg.com/site-graphics/mk-logo-square.svg" class="logo-icon">
+        <div class="wordmark-lockup">
+          <a href="index.html" class="stretched-link my-name">MICHAEL KRONENBERG</a>
+          <p class="title">Product UX/UI Designer</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="multi-product-article-grid">
+		
+      <div class="company">
+        <h6 class="mb-0 text-muted">COMPANY</h6>
+        <h1 class="display-4 font-weight-normal">Voyant</h1>
+      </div>
+      <div class="product-switcher">
+        <h6 class="mb-3 text-muted">PRODUCTS</h6>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="voyant-conferencing.html"><i class="fas fa-video"></i> Conferencing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voyant-voicemail.html"><i class="fas fa-voicemail"></i> Visual Voicemail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="voyant-admin.html"><i class="fas fa-cog"></i> Telecom Admin</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- table-of-contents -->
+      <div class="table-of-contents">
+          <nav id="scrollspy-nav" class="sticky-top pt-4">
+            <h6 class="text-muted">CASE STUDY</h6>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">Business Context</a>
+              <a class="nav-link" href="#item-2">Research</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#item-2-1">Methodology</a>
+                <a class="nav-link ml-3 my-1" href="#item-2-2">Analysis</a>
+              </nav>
+              <a class="nav-link" href="#item-3">UX Solutions</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#item-3-1">Spacial Hierarchy</a>
+                <a class="nav-link ml-3 my-1" href="#item-3-2">Layouts</a>
+                <a class="nav-link ml-3 my-1" href="#item-3-3">Call Controls</a>
+                <a class="nav-link ml-3 my-1" href="#item-3-4">Vanishing Interface</a>
+              </nav>
+              <a class="nav-link" href="#item-4">Dev Handoff</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#item-4-1">Speaking Indicator</a>
+                <a class="nav-link ml-3 my-1" href="#item-4-2">Grid Optimization</a>
+              </nav>
+            </nav>
+          </nav>
+      </div>
+
+      <div class="main-content pt-4">
+        <img src="images/projects/voyant/conferencing/conference-preview.svg" class="img-fluid" alt="app preview">
+        <div class="card mt-3 mb-5 bg-light">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+            <h5><span class="badge badge-warning"><i class="fas fa-bolt"></i> Live</span> Publicly Accessible Prototype</h5>
+            <p class="text-muted mb-0">Development is frozen so not all features are up to date</p>
+            </div>
+            <a href="https://conference.voyant.com/michaelkronenberg" target="_blank" class="btn btn-primary">Try the Prototype</a>
+          </div>
+        </div>
+        <!-- Business Context -->
+        <section id="item-1">
+          <h3 class="mb-4">Business Context</h3>
+          <h5>Existing Product reaching end-of-life</h5>
+          <p>Voyant's existing conferencing solution was bundled as part of a white-labelled reseller instance of Broadsoft Unified Communication (UCaaS), built and distributed by Cisco. The need for a replacement was escalated by <strong class="text-danger">Cisco ending support for self-hosted reseller instances</strong> in favor of cloud hosted, cutting out our margins. Different components of the application had different end-of-support road maps, the first to loose support was the conferencing component named Broadsoft Collaborate</p>
+          <p>A replacement for Broadsoft was paramount to the survival of the business. Voyant's reselling of Broadsoft accounted for almost 50% of our business, or roughly $30 million in annual revenue. Given the scale of the revenue it was decided that a full replacement UCaaS solution would be built.</p>
+          <h5 class="mt-3">Customer Attrition</h5>
+          <p>The existing product's conferencing experience lacked in comparison to modern competitors. Customers were were supplementing our UCaaS product with outside party's conferencing solutions. Unified Communications is sold on the premise that it's the only product a company needs. Purchasing a different conferencing solution was a crack in the foundation of our UCaaS business.</p>
+        </section>
+        <hr class="my-5">
+
+        <!-- Requirements -->
+        <section>
+          <h4 class="mb-4">Product Requirements</h4>
+          <h5>Modular Product</h5>
+          <p>With a tight time frame product leadership decided to take a modular approach. In the short-term the application could live as a feature inside of Broadsoft with a Long-term transition plan to live inside our new in-house UCaaS solution. However, depending on the speed of our UCaaS developers we could have skipped the short-term plan. Finally the product team was leaning towards selling the application a stand-alone product.</p>
+          
+          <h5 class="mt-4">Built on the Jitsi Meet Open-Source Platform</h5>
+          <div class="article-two-column">
+            <div>
+              <h6>WebRTC</h6>
+              <p><a href="https://meet.jit.si/" target="_blank">Jitsi Meet</a> allows us to leverage their Web Real-Time Communications (<a href="https://webrtc.org/" target="_blank">WebRTC</a>) front-end functionality, while transmitting audio in the back-end over our own telecom network.</p>
+            </div>
+            <div>
+              <h6>Videobridge</h6>
+              <p>Jitsi's <a href="https://jitsi.org/jitsi-videobridge/">Videobridge</a> functionality allows us to quickly integrate camera and screenshare capabilities.</p>
+            </div>
+          </div>
+          <h5 class="mt-4"><a href="https://en.wikipedia.org/wiki/Public_switched_telephone_network" target="_blank">PSTN</a> Dial-In via the Inteliquent Network</h5>
+          <p>Leveraging our parent company's telecom network allows users would be able to dial-in via a traditional phone line.</p>
+        </section>
+        <hr class="my-5">
+
+        <!-- Technical Limitations 
+        <section>
+          <h3>Technical Limitations</h3>
+          <h6>Building on an existing platform meant that we had access and API guide to reference.</h6>
+          <a href="https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-iframe">Jitsi API Docs</a>
+        </section>
+        <hr class="my-5"> -->
+
+        <!-- Research -->
+        <section>
+          <h3 id="item-2" class="mb-4">Research</h3>
+
+          <section>
+            <h4 class="mt-4">Goals</h4>
+            <h6 class="mt-3">Optimize the in-conference experience</h6>
+            <p>With <strong class="text-danger">no clear context on where conferencing should live</strong>, I directed the focus of my research on the commonalities between the possible product scenarios. Conferencing applications vary in how users are organized, how users are invited to and join a conference. However, in-conference experiences are consistent across different application contexts.</p>
+          </section>
+          <hr class="my-5">
+
+          <section>
+            <h4 class="mb-3">Target Personas</h4>
+            <h6>A user group too large to target</h6>
+            <p>Our conferencing product could be used by anyone who has a job.</p>
+          </section>
+          <hr class="my-5">
+
+          <!-- Methodology -->
+          <section>
+            <h4 id="item-2-1">Formative Research Methodology</h4>
+            
+            <p>In an engineering-led legacy tech company with no research experience we needed to prove value quickly. Our methods were chosen for their cost effective, data driven format.</p>
+            <div class="article-three-column my-4">
+              <div>
+                <h5>Quantitative</h5>
+                <dt>Inexpensive</dt>
+                <dd>While establishing our user research practice, our initial budget constraints limited the methods of research that were feasible. Quantitative research can be performed unsupervised, remotely and at a large scale.</dd>
+                <dt>Data Driven</dt>
+                <dd>Our results needed to be irrefutable by leadership.</dd>
+              </div>
+              <div>
+                <h5>Surveys</h5>
+                <dt>Low Collection Cost</dt>
+                <dd>Of all the research methods, surveys are the cheapest. We eliminated costs by conducting them on our own employees using Google Forms, a tool we already paid for.</dd>
+                <dt>Ease of Analysis</dt>
+                <dd>Results feed into tables and then into charts. Possible correlations are thought of at the time of writing the survey.</dd>
+              </div>
+              <div>
+                <h5>Likert Scale</h5>
+                <dt>Consistency</dt>
+                <dd>Each question has the same format so participants can answer more spontaneously.</dd>
+              </div>
+            </div>
+           
+          </section>
+
+          <!-- UX Benchmarking -->
+          <section>
+            <h4 class="mb-4">UX Benchmarking</h4>
+            <div class="card mt-4 mb-5">
+              <h5 class="card-header">Benchmark Survey</h5>
+              <div class="card-body">
+                <p>I surveyed employees about their general feelings towards conferencing applications. I also included questions that correlated to each other.</p>
+                <dt>Sample Size</dt>
+                <dd>87</dd>
+                <a class="btn btn-outline-primary" href="https://forms.gle/zqZSrberiEtCwFmTA" target="_blank"><i class="fas fa-clipboard-list"></i> See the survey</a>
+                <hr class="my-3">
+                <h5>Key Performance Indicators</h5>
+                <div class="article-two-column">
+                  <div>
+                    <dt class="mb-2">During web conferences, I turn my camera on</dt>
+                    <dd class="lead">2.9 <small>/ 5</small></dd>
+                  </div>
+                  <div>
+                    <dt class="mb-2">Ability to jump into conversation in a web conference compared to in-person</dt>
+                    <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 24% <small>less than in-person</small></dd>          
+                  </div>
+                  <div>
+                    <dt class="mb-2">Active observance of facial expressions and body language in a web conference compared to in-person</dt>
+                    <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 46% <small>less than in-person</small></dd>
+                  </div>
+                  <div>
+                    <dt class="mb-2">Active use of facial expressions and body language in a web conference compared to in-person</dt>
+                    <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 17% <small>less than in-person</small></dd>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </section>
+          <hr class="my-5">
+
+          <!-- Analysis -->
+          <section>
+            <h4 id="item-2-2">Analysis</h4>
+            <div class="card">
+              <div class="card-header text-center">
+                <h5 class="card-title mb-0"><i class="far fa-lightbulb icon-embellish--success mr-2"></i><span class="text-success">Insight:</span> Camera usage increases meeting engagement</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-flex mb-2">
+                  <div>
+                    <i class="fas fa-edit icon-embellish--warning mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1 mt-1">Hypothesis</dt>
+                    <dd>The use facial expressions and body language, whether consciously or not, allows participants to navigate a conversation more naturally.</dd>    
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-drafting-compass icon-embellish--success mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1 mt-1">UX Solution</dt>
+                    <dd>Encourage participants to turn on their cameras to improve their engagement in the conversation</dd>    
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div>
+                    <i class="fas fa-poll mr-2 icon-embellish--primary"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-0">Supporting Data</dt>
+                  </div>
+                </div>
+                <div id="accordion" class="engagement-metrics">
+                  <div class="card">
+                    <div class="card-header position-relative" id="headingOne">
+                      <dt class="mb-0 stretched-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Data #1
+                      </dt>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="d-flex">
+                          <div>
+                            <i class="fas fa-chart-line mr-2 icon-embellish--info"></i>
+                          </div>
+                          <div>
+                            <dt class="mb-1">
+                              Correlation
+                            </dt>
+                            <dd>Participants who usually had their camera on reported greater assertion that their opinion was given attention during a meeting</dd>
+                          </div>
+                        </div>
+                        <div class="scatter-plot mb-3" style="max-width: 604px;">
+                          <iframe 
+                            width="603" 
+                            height="373" 
+                            seamless
+                            frameborder="0" 
+                            scrolling="no" 
+                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQimK5mj6rj7ZQSS5I2N6s13JL3C-ABpcjOa9FVmEiSLK0CVUEWj-WjwfZAkCrNsielaPeMu9hThSY0/pubchart?oid=1279694562&amp;format=image">
+                          </iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header position-relative" id="headingTwo">
+                      <dt class="mb-0 stretched-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Data #2
+                      </dt>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="d-flex">
+                          <div>
+                            <i class="fas fa-chart-line mr-2 icon-embellish--info"></i>
+                          </div>
+                          <div>
+                            <dt class="mb-1">
+                              Comparison
+                            </dt>
+                            <dd>Participants found it easier to jump into a conversation in a more visual environment</dd>
+                          </div>
+                        </div>
+                        <div class="scatter-plot" style="max-width: 600px;">
+                          <iframe 
+                            width="600" 
+                            height="371" 
+                            seamless 
+                            frameborder="0" 
+                            scrolling="no" 
+                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQimK5mj6rj7ZQSS5I2N6s13JL3C-ABpcjOa9FVmEiSLK0CVUEWj-WjwfZAkCrNsielaPeMu9hThSY0/pubchart?oid=882374222&amp;format=image">
+                          </iframe>             
+                        </div>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mt-5">
+              <div class="card-header text-center">
+                <h5 class="card-title mb-0"><i class="far fa-lightbulb icon-embellish--success mr-2"></i><span class="text-success">Insight:</span> Users responded to social pressure to turn their cameras on</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-flex mt-2">
+                  <div>
+                    <i class="fas fa-edit icon-embellish--warning mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">Hypothesis</dt>
+                    <dd>This correlation can be explained by herd mentality.</dd>
+                  </div>
+                </div> 
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-drafting-compass icon-embellish--success mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">UX Solution</dt>
+                    <dd>Same as before, encourage participants to turn on their cameras begin the positive feedback loop</dd>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-chart-line mr-2 icon-embellish--info"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">Correlation</dt>
+                    <dd>Users are more likely to turn their camera on if peers or especially their boss have their cameras on</dd>
+                    <dd>Users who usually turn their camera on are less likely if their peers don't</dd>
+                  </div>
+                </div>
+                <div class="scatter-plot" style="max-width: 604px;">
+                  <iframe 
+                    width="600" 
+                    height="371" 
+                    seamless 
+                    frameborder="0" 
+                    scrolling="no" 
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQimK5mj6rj7ZQSS5I2N6s13JL3C-ABpcjOa9FVmEiSLK0CVUEWj-WjwfZAkCrNsielaPeMu9hThSY0/pubchart?oid=557139655&amp;format=image">
+                  </iframe>
+                </div>   
+              </div>
+            </div>
+
+            <div class="card mt-5">
+              <div class="card-header text-center">
+                <h5 class="card-title mb-0"><i class="far fa-lightbulb icon-embellish--success mr-2"></i><span class="text-success">Insight:</span> Users are distracted by their own camera feed</h5>
+              </div>
+              <div class="card-body">
+                <div class="d-flex mt-2">
+                  <div>
+                    <i class="fas fa-edit icon-embellish--warning mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">Hypothesis</dt>
+                    <dd>User's are concerned about their appearance</dd>
+                  </div>
+                </div> 
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-drafting-compass icon-embellish--success mr-2"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">UX Solution</dt>
+                    <dd>Reduce the size of a user's own camera feed to reduce distraction.</dd>
+                  </div>
+                </div> 
+                <div class="d-flex">
+                  <div>
+                    <i class="fas fa-chart-line mr-2 icon-embellish--info"></i>
+                  </div>
+                  <div>
+                    <dt class="mb-1">Distribution</dt>
+                    <dd>Most users admitted to being distracted by their own camera feed at least sometimes</dd>
+                  </div>
+                </div>
+                <div class="scatter-plot" style="max-width: 600px;">
+                  <iframe 
+                    width="600" 
+                    height="371" 
+                    seamless 
+                    frameborder="0" 
+                    scrolling="no" 
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQimK5mj6rj7ZQSS5I2N6s13JL3C-ABpcjOa9FVmEiSLK0CVUEWj-WjwfZAkCrNsielaPeMu9hThSY0/pubchart?oid=1411196744&amp;format=image">
+                  </iframe>
+                </div>   
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+          </section>
+        </section>
+        <!-- UX Solutions -->
+        <section>
+          <h3 id="item-3" class="mt-5 mb-4">UX Solutions</h3>
+          <!-- Spacial Hierarchy -->
+          <section>
+            <h5 id="item-3-1">Create spacial hierarchy to encourage camera use</h5>
+            <div class="hierarchy">
+              <div class="hierarchy__element hierarchy__element--large"><i class="fas fa-video"></i></div>
+              <div class="hierarchy__element hierarchy__element--small"><i class="fas fa-phone"></i></div>
+            </div>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dt class="text-success"><i class="far fa-check-circle"></i> Right Sized</dt>
+                  <dd>Space is prioritized to show visual information</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/conferencing/video-grid/video-grid-accept.png" class="" alt="...">
+              </div>
+            </figure>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dt class="text-danger"><i class="fas fa-ban"></i> Inefficient</dt>
+                  <dd>Wasted space for audio only participants</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/conferencing/video-grid/video-grid-reject.png" class="" alt="...">
+              </div>
+            </figure>
+            <hr class="my-5">
+          </section>
+          
+          <!-- Grid vs Active Speaker -->
+          <section>
+            <h4 id="item-3-2">Layout Comparison</h4>
+            <p>The ability read and project non-verbal communication across the room contributes to the ease of participation during in-person meetings.
+            <dt>Hypothesis</dt>
+            <dd>We hypothesized that the grid view would be the most effective layout to allow participants to communicate non-verbally.</dd>
+            <dt>Control</dt>
+            <dd>The active speaker view was our control because we had to design it anyway. It's an effective layout for screensharing.</dd>
+            <h6 class="mt-4">Grid View</h6>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dt class="text-success"><i class="far fa-check-circle"></i> Grid</dt>
+                  <dd>Participants can read the room and can project their intent to speak.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/conferencing/video-grid/grid-view.png" class="" alt="...">
+              </div>
+            </figure>
+            <h6 class="mt-4">Active Speaker View</h6>
+            <figure class="screenshot-with-caption">
+              <figcaption>
+                <div class="caption-container">
+                  <dt class="text-danger"><i class="fas fa-ban"></i> Active Speaker</dt>
+                  <dd>It's harder to read the room if the sidebar is overflowing. It's hard to know if people can see your intent to speak.</dd>
+                </div>
+              </figcaption>
+              <div class="img-div">
+                <img src="images/projects/voyant/conferencing/video-grid/active-speaker-view.png" class="" alt="...">
+              </div>
+            </figure>
+            
+          </section>
+          
+        </section>
+        <hr class="my-5">
+        <!-- Validation -->
+        <section>
+          <h4>Evaluation</h4>
+          <dt>Methodology</dt>
+          <dd>Unmoderated User Testing followed by the benchmark survey</dd>
+          <dt>Scenario</dt>
+          <dd>Select Grid or Active Speaker view, participate in your morning stand-up meeting. Fill out the survey. Choose the other view the following day and repeat the survey</dd>
+          <dt>Sample Size</dt>
+          <dd>38</dd>
+          <div class="card">
+            <h6 class="card-header">Grid View</h6>
+            <div class="card-body article-two-column">
+              <div>
+                <dt class="mb-2">During web conferences, I turn my camera on</dt>
+                <dd class="lead">3.3 <small>/ 5</small></dd>
+                <dd class="text-success"><i class="fas fa-long-arrow-alt-up"></i> .4 <small>change</small></dd>
+              </div>
+              <div>
+                <dt class="mb-2">Ability to jump into conversation in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 21% <small>less than in-person</small></dd>
+                <dd class="text-success"><i class="fas fa-long-arrow-alt-up"></i> 3% <small>change</small></dd>          
+              </div>
+              <div>
+                <dt class="mb-2">Active observance of facial expressions and body language in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 38% <small>less than in-person</small></dd>
+                <dd class="text-success"><i class="fas fa-long-arrow-alt-up"></i> 8% <small>change</small></dd>
+              </div>
+              <div>
+                <dt class="mb-2">Active use of facial expressions and body language in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 16% <small>less than in-person</small></dd>
+                <dd class="text-success"><i class="fas fa-long-arrow-alt-up"></i> 1% <small>change</small></dd>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4">
+            <h6 class="card-header">Active Speaker View</h6>
+            <div class="card-body article-two-column">
+              <div>
+                <dt class="mb-2">During web conferences, I turn my camera on</dt>
+                <dd class="lead">3.0 <small>/ 5</small></dd>
+                <dd class="text-success"><i class="fas fa-long-arrow-alt-up"></i> .1 <small>change</small></dd>
+              </div>
+              <div>
+                <dt class="mb-2">Ability to jump into conversation in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 26%</dd>
+                <dd class="text-danger"><i class="fas fa-long-arrow-alt-down"></i> 2% <small>change</small></dd>         
+              </div>
+              <div>
+                <dt class="mb-2">Active observance of facial expressions and body language in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 49% <small>less than in-person</small></dd>
+                <dd class="text-danger"><i class="fas fa-long-arrow-alt-down"></i> 3% <small>change</small></dd>
+              </div>
+              <div>
+                <dt class="mb-2">Active use of facial expressions and body language in a web conference compared to in-person</dt>
+                <dd class="lead text-danger"><i class="fas fa-long-arrow-alt-down"></i> 17% <small>less than in-person</small></dd>
+                <dd class="text-secondary">0% <small>change</small></dd>
+              </div>
+            </div>
+          </div>
+          <hr class="my-5">
+        
+          <!-- 
+          <dd>Moderated User Testing followed by an interview</dd>
+          <dd>Traditional user testing scenarios and tasks don't apply in this situation. In our test the user did not need to touch the mouse or keyboard, although they were allowed to. They could not be prompted to answer questions during the test because we wanted them to participate in their meeting as they normally would.</dd>
+          <dt>Moderated Sample Size</dt>
+          <dd>20</dd>
+          <dt>Scenario</dt>
+          <dd>Everyone on the scrum team will use a chosen view, Grid or Active speaker. One user will be selected for observation during.</dd>
+          <div class="article-two-column">
+            <div>
+              <dt>Observations for the moderator to note</dt>
+              <ul class="pl-4">
+                <li>Did the user turn their camera on?</li>
+                <li>Did the user react physically to the conversation?</li>
+                <li>Did the user speak other than when asked to?</li>
+              </ul>
+            </div>
+            <div>
+              <dt>Post Conference Interview</dt>
+              <ul class="pl-4">
+                <li>Why did you turn on your camera / Why did you NOT turn on your camera?</li>
+                <li>Do you care if others turn their cameras on? Why?</li>
+                <li>(If Camera was on) Do you feel as though people were looking at you? Why?</li>
+                <li>How is communicating different on a conference call to you?</li>
+                <li>I noticed that you didn't speak except during your turn at stand-up. Did you have something else you wanted to bring up to the team? Why didn't you</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-5">
+          
+          <h5>Takeaways</h5>
+          <div class="article-two-column">
+            <div>
+              <dt>13 User turned their camera on</dt>
+              <dd>10 Muted themselves when not speaking</dd>
+              <dd>4 had physical reactions</dd>
+              <dd>11 we</dd>
+              <dd>5 only spoke to give their stand-up update</dd>
+              <dd>Common explanation:
+                <ul>
+                  <li>Morning stand-up wasn't a very engaging meeting</li>
+                  <li>Often multi-task during stand-up</li>
+                </ul>
+              <dd>0 reported needing to bring something up to the team other than their update</dd>
+            </div>
+            <div>
+              <dt>7 Users didn't turn their camera on</dt>
+              <dd>4 only spoke to give their stand-up update</dd>
+              <dd>Common explanation:
+                <ul>
+                  <li>Morning stand-up wasn't a very engaging meeting</li>
+                  <li>Often multi-task during stand-up</li>
+                </ul>
+              <dd>0 reported needing to bring something up to the team other than their update</dd>
+            </div>
+          </div>
+          
+            
+          </dd>
+
+          <p>User's who did turn their camera on</p>
+          
+          <blockquote class="blockquote">I never know if someone is looking at me so I'm always conscious about my posture and looking like I'm paying attention.</blockquote>
+          <blockquote class="blockquote">We have some people who are remote and it's nice to see them.</blockquote>
+
+
+          <dt>Survey to the group</dt>
+
+         
+          <h6>Aspect of the in person meetings</h6>
+          <p>Pressure to be mentally present in the conversation</p>
+          <p>Part of the in person experience of meetings is the multiple streams of communication. There may be someone actively speaking to the group, but other participants are reading the room to judge the reaction. People, signal with body language to indicate they want to speak.</p>
+            In person meetings have inherit social pressures of accountability. Everyone can see if you are paying attention and if you are engaging in the conversation.
+          -->
+        </section>
+
+        <!-- Call Controls -->
+        <section>
+          <h5 id="item-3-3">Call Controls</h5>
+          <div class="figma-holder">
+            <iframe 
+              id="figma-controls"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzAktvdtdWzvR1pvcqR6sXy%2FCall-Controls%3Fnode-id%3D1%253A10%26viewport%3D458%252C247%252C0.5%26scaling%3Dmin-zoom" 
+              allowfullscreen>
+            </iframe>
+          </div> 
+
+          <h5>Validation Using Paper Prototype User Testing</h5>
+          <dt>Script Scenarios</dt>
+          <dd>Start with your audio and camera on, what do you do with your conference?</dd>
+          <ul>
+            <li>Your doorbell just rang</li>
+            <li>Your spouse asked you a question</li>
+            <li>Your kids are running around behind you.</li>
+            <li>You're getting another call</li>
+          </ul>
+          <div class="article-two-column mt-3 mb-4">
+            <div>
+              <dt class="mb-2">Voyant's Solution</dt>
+              <img src="images/projects/voyant/conferencing/paper-prototype/original-solution.jpg" class="img-fluid">
+              <h6 class="mt-3">Comments from test users</h6>
+              <blockquote class="blockquote">"I like how audio and video controls are divided"</blockquote>
+            </div>
+            <div>
+              <dt class="mb-2">Zoom's Solution</dt>
+              <img src="images/projects/voyant/conferencing/paper-prototype/zoom-solution-1.jpg" class="img-fluid">
+              <h6 class="mt-3">Comments from test users</h6>
+              <blockquote class="blockquote">"It's not intuitive that the audio out controls are buried next to the microphone"</blockquote>
+            </div>
+          </div>
+
+          <div class="controls-comparison d-none">
+            <div class="controls-comparison__header header-hardware">Hardware Controls</div>
+            <div class="controls-comparison__header header-situational">Situational Controls</div>
+            <div class="example-hardware">
+              <p class="text-primary"><i class="far fa-dot-circle"></i> Example</p>
+              <figure>
+                <img src="images/projects/voyant/conferencing/buttons/microphone.svg">
+                <img src="images/projects/voyant/conferencing/buttons/speaker.svg">
+              </figure>
+            </div>
+            <div class="example-situational">
+              <p class="text-primary"><i class="far fa-dot-circle"></i> Example</p>
+              <figure>
+                <img src="images/projects/voyant/conferencing/buttons/leave-computer-audio.svg">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+            <div class="pro-hardware">
+              <p class="text-success mb-2"><i class="far fa-check-circle"></i> Pro</p>
+              <ul>
+                <li>Accounts for every situation</li>
+                <li>Reduces clutter</li>
+                <li>Have to include them anyway</li>
+                <li>Easy implementation for MVP</li>
+                <li>Scales easily as users switch between devices</li>
+              </ul>
+            </div>
+            <div class="pro-situational">
+              <p class="text-success mb-2"><i class="far fa-check-circle"></i> Pro</p>
+              <ul>
+                <li>Can provide faster controls for common situations (examples: hold, transfer)</li>
+              </ul>
+            </div>
+            <div class="con-hardware">
+              <p class="text-danger mb-2"><i class="fas fa-ban"></i> Con</p>
+              <ul>
+                <li>Can be slower due to multiple actions</li>
+              </ul>
+            </div>
+            <div class="con-situational">
+              <p class="text-danger mb-2"><i class="fas fa-ban"></i> Con</p>
+              <ul>
+                <li>Difficult to account for every situation</li>
+                <li>Still need hardware controls</li>
+                <li>Can be cluttered</li>
+                <li>Doesn't scale easily across devices</li>
+              </ul>
+            </div>
+          </div>
+          <!--
+          <ul>
+            <li>When I join the conference I want to dial in with my phone for the audio because the audio is better</li>
+            <li>I'm on my phone already and I just need to share my screen with them</li>
+            <li>When I join the web conference, I want to be muted so I can just listen in</li>
+            <li>I need to leave, so I want to transfer the conference on my cell phone</li>
+            <li>I need to leave, so I want to transfer the conference to my mobile app</li>
+          </ul> -->
+          <hr class="my-5">
+        </section>
+
+        <!-- Vanishing Interface -->
+        <section>
+          <h5 id="item-3-4" class="mb-3">Vanishing Interface</h5>
+          <p class="mb-5">Conferencing interfaces can become very cluttered as features are added. However, the vast majority of participant's time is spent in conversation rather than using the controls. When the app detects no cursor movement it will hide the controls, allow the participant to concentrate on the conversation.</p>
+          <figure class="screenshot-with-caption">
+            <figcaption>
+              <div class="caption-container">             
+                <dt class="text-primary"><i class="fas fa-mouse-pointer"></i> Mouse Move</dt>
+                <dd>In the application controls appear on Mouse Move. For demonstration purposes they appear on hover.</dd>
+              </div>
+            </figcaption>
+            <div class="img-div">
+              <img src="images/projects/voyant/conferencing/controls/controls-clear.png" class="multi-base-img" alt="...">
+            </div>
+          </figure>
+          <hr class="my-5">
+        </section>
+        
+        <!-- Dev Handoff -->
+        <section>
+          <h3 id="item-4" class="mt-5 mb-4">Dev Handoff</h3>
+          <!-- Speaking Indicator -->
+          <section>
+            <h5 id="item-4-1">Speaking Indicator</h5>
+            <p>This speaking indicator design works on both users in the video grid and users in the audio sidebar. It doesn't block anything by existing entirely in the margins between participants. It could react to volume and duration.</p>
+            <p class="codepen" data-height="280" data-theme-id="light" data-default-tab="result" data-user="mkronenberg" data-slug-hash="MWaoeZL" style="height: 280px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Speaking Indicator">
+              <span>See the Pen <a href="https://codepen.io/mkronenberg/pen/MWaoeZL">
+              Speaking Indicator</a> by Michael Kronenberg (<a href="https://codepen.io/mkronenberg">@mkronenberg</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            <hr class="my-5">
+          </section>
+          <!-- Grid Optimization -->
+          <section>
+            <h5 id="item-4-2">Grid Optimization</h5>
+            <p>Since CSS alone could not accomplish the task without potentially overflowing the container I created a formula to determine the most efficient arrangement</p>
+            <div class="card">
+              <div class="card-body">
+                Formula Walk-through
+              </div>
+            </div>
+            <div id="formula-accordion" class="formula-overview">
+              <div class="card">
+                <div class="card-header position-relative" id="formulaHeadingOne">
+                  <h6 class="mb-0 stretched-link" data-toggle="collapse" data-target="#formulaCollapseOne" aria-expanded="true" aria-controls="formulaCollapseOne">
+                    Objective
+                  </h6>
+                </div>
+                <div id="formulaCollapseOne" class="collapse show" aria-labelledby="formulaHeadingOne" data-parent="#formula-accordion">
+                  <div class="card-body">
+                    <p>Find the grid arrangement with the largest area per item</p>
+                    <div class="comparison">
+                      <div class="comparison__correct">
+                          <p class="text-success mb-1"><i class="far fa-check-circle"></i> Larger</p>
+                          <img src="images/projects/voyant/conferencing/grid-calc/area-larger.svg" style="max-width: 130px;">
+                        </div>
+                      <div class="comparison__wrong">
+                        <p class="text-danger mb-1"><i class="fas fa-ban"></i> Smaller</p>
+                        <img src="images/projects/voyant/conferencing/grid-calc/area-smaller.svg" style="max-width: 130px;">
+                      </div>
+                    </div>
+                    <p>If two arrangements produce the same area per item choose the arrangement with the grid ratio closest to 1</p>
+                    <div class="comparison">
+                      <div class="comparison__correct">
+                          <p class="text-success mb-1"><i class="far fa-check-circle"></i> Grid Ratio: 1</p>
+                          <img src="images/projects/voyant/conferencing/grid-calc/ratio-good.svg" style="max-width: 192px;">
+                        </div>
+                      <div class="comparison__wrong">
+                        <p class="text-danger mb-1"><i class="fas fa-ban"></i> Grid Ratio: 1.5</p>
+                        <img src="images/projects/voyant/conferencing/grid-calc/ratio-bad.svg" style="max-width: 192px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header position-relative" id="formulaHeadingTwo">
+                  <h6 class="mb-0 stretched-link collapsed" data-toggle="collapse" data-target="#formulaCollapseTwo" aria-expanded="false" aria-controls="formulaCollapseTwo">
+                    Rules
+                  </h6>
+                </div>
+                <div id="formulaCollapseTwo" class="collapse" aria-labelledby="formulaHeadingTwo" data-parent="#formula-accordion">
+                  <div class="card-body">
+                    <p>The grid arrangement may not have a negative margin to neighboring elements on the page</p>
+                    <div class="comparison">
+                      <div class="comparison__correct">
+                          <p class="text-success mb-1"><i class="far fa-check-circle"></i> Positive Margin</p>
+                          <img src="images/projects/voyant/conferencing/grid-calc/margin-positive.svg" style="max-width: 170px;">
+                        </div>
+                      <div class="comparison__wrong">
+                        <p class="text-danger mb-1"><i class="fas fa-ban"></i> Negative Margin</p>
+                        <img src="images/projects/voyant/conferencing/grid-calc/margin-negative.svg" style="max-width: 170px;">
+                      </div>
+                    </div>
+                    <p>Video feeds always maintain a 16&ratio;9 ratio</p>
+                    <div class="comparison">
+                      <div class="comparison__correct">
+                          <p class="text-success mb-1"><i class="far fa-check-circle"></i> Correct Aspect Ratio</p>
+                          <img src="images/projects/voyant/conferencing/grid-calc/aspect-correct.svg" style="max-width: 80px;">
+                        </div>
+                      <div class="comparison__wrong">
+                        <p class="text-danger mb-1"><i class="fas fa-ban"></i> Incorrect Aspect Ratio</p>
+                        <img src="images/projects/voyant/conferencing/grid-calc/aspect-wrong.svg" style="max-width: 55px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header position-relative" id="formulaHeadingThree">
+                  <h6 class="mb-0 stretched-link collapsed" data-toggle="collapse" data-target="#formulaCollapseThree" aria-expanded="false" aria-controls="formulaCollapseThree">
+                    Inputs
+                  </h6>
+                </div>
+                <div id="formulaCollapseThree" class="collapse" aria-labelledby="formulaHeadingThree" data-parent="#formula-accordion">
+                  <div class="card-body">           
+                    <dt>Variables</dt>
+                    <div class="two-column">
+                      <div>
+                        <dd>Browser Width &amp; Height</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/input-browser.svg" style="max-width: 356px;">
+                      </div>
+                      <div>
+                        <dd>Number of Participants in the Grid</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/input-participant.svg" style="max-width: 160px;">
+                      </div>
+                    </div>
+                    <dt class="mt-3 mb-1">Design Constraints</dt>
+                    <img src="images/projects/voyant/conferencing/grid-calc/design-contraints.svg" style="max-width: 340px;">
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header position-relative" id="formulaHeadingFour">
+                  <h6 class="mb-0 stretched-link collapsed" data-toggle="collapse" data-target="#formulaCollapseFour" aria-expanded="false" aria-controls="formulaCollapseFour">
+                    Calculations
+                  </h6>
+                </div>
+                <div id="formulaCollapseFour" class="collapse" aria-labelledby="formulaHeadingFour" data-parent="#formula-accordion">
+                  <div class="card-body"> 
+                    <dt>Use the browser dimensions to calculate the grid canvas dimensions</dt>
+                    <dd>Canvas Width &equals; Browser Width &minus; Sidebar Width &minus; (Grid Padding &times; 2)</dd>
+                    <dd>Canvas Height &equals; Browser Height &minus; (Grid Padding &times; 2)</dd>
+                    <figure>
+                      <figcaption></figcaption>
+                      <img src="images/projects/voyant/conferencing/grid-calc/calc-canvas.svg" style="max-width: 356px;">
+                    </figure>
+                    <hr>          
+                    <dt>Use the number of participants to calculate the number of rows for each arrangement from 1 to 8 columns</dt>
+                    <dd>Rows &equals; RoundUp ( Number of Participants &divide; Columns )</dd>
+                    <figure>
+                      <figcaption>Example: 8 Participants</figcaption>
+                      <img src="images/projects/voyant/conferencing/grid-calc/calc-layouts.svg" style="max-width: 772px;">
+                    </figure>
+                    <hr>
+                    <dt>For each arrangement, create 2 variations,</dt>
+                    <dd class="mb-3">Example: 8 participants, grid arrangement 3 columns, 3 rows.</dd>
+                    <div class="two-column">
+                      <div>
+                        <dt>Horizontal grid fit to the grid canvas</dt>
+                        <dd>Total Grid width &equals; Grid Canvas width</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/fit-horizontal.svg" style="max-width: 340px;">
+                      </div>
+                      <div>
+                        <dt>Vertical grid fit to the grid canvas</dt>
+                        <dd>Total Grid height &equals; Grid Canvas height</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/fit-vertical.svg" style="max-width: 360px;">
+                      </div>
+                      <div>
+                        <dt>calculate the width per feed for a horizontal grid fit to the grid canvas</dt>
+                        <dd>Width per Feed &equals; (Total Grid Width &minus; (Grid Gap &times; (Columns &minus; 1))) &divide; Columns</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/per-feed-width.svg" style="max-width: 280px;">
+                      </div>
+                      <div>
+                        <dt>calculate the height per feed for a vertical grid fit to the grid canvas</dt>
+                        <dd>Height per Feed &equals; (Total Grid Height &minus; (Grid Gap &times; (Rows &minus; 1))) &divide; Rows</dd>
+                        <img src="images/projects/voyant/conferencing/grid-calc/per-feed-height.svg" style="max-width: 347px;">
+                      </div>
+                      <div>
+                        <dt>Use the width per feed to calculate to the height per feed and the total grid height</dt>
+                        <dd>Height per Feed &equals; Width per Feed &times; (9&divide;16)</dd>
+                        <dd>Total Grid Height &equals; (Height per Feed &times; Rows) &plus; (Grid Gap &times; (Rows &minus; 1))</dd>
+                      </div>
+                      <div>
+                        <dt>Use the height per feed to calculate to the width per feed and the total grid width</dt>
+                        <dd>Width per Feed &equals; Height per Feed &times; (16&divide;9)</dd>
+                        <dd>Total Grid Width &equals; (Width per Feed &times; Columns) &plus; (Grid Gap &times; (Columns &minus; 1))</dd>
+                      </div>
+                      <div>
+                        <dt>Calculate the Vertical Margin between the Grid Canvas Height and the Total Grid Height</dt>
+                        <dd>Vertical Margin &equals; Grid Canvas Height &minus; Total Grid Height</dd>
+                        <figure>
+                          <img src="images/projects/voyant/conferencing/grid-calc/margin-vertical.svg" style="max-width: 280px;">
+                          <figcaption class="text-success"><i class="far fa-check-circle"></i> Valid Layout</figcaption>
+                        </figure>
+                      </div>  
+                      <div>
+                        <dt>Calculate the margin between the Grid Canvas Width and the Total Grid Width</dt>
+                        <dd>Horizontal Margin &equals; Grid Canvas Width &minus; Total Grid Width</dd>
+                        <figure>
+                          <img src="images/projects/voyant/conferencing/grid-calc/margin-horizontal.svg" style="max-width: 327px;">
+                          <figcaption class="text-danger"><i class="fas fa-ban"></i> Invalid Layout</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <dt>Calculate the Area per Feed</dt>
+                        <dd>Area per Feed &equals; Width per Feed &times; Height Per Feed</dd>
+                      </div>
+                      <div>
+                        <dt class="text-danger">Layout Eliminated</dt>
+                      </div>
+                      <div class="span-two">
+                        <dt>Compare all valid layouts for the largest Area per Feed</dt>
+                        <div class="area-compare">
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-1.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-2.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-3.svg" >
+                            <figcaption class="text-success"><i class="far fa-check-circle"></i> Largest Area per Feed</figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-4.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-5.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-6.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-7.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="images/projects/voyant/conferencing/grid-calc/area-compare-8.svg" >
+                            <figcaption></figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header position-relative" id="formulaHeadingFive">
+                  <h6 class="mb-0 stretched-link collapsed" data-toggle="collapse" data-target="#formulaCollapseFive" aria-expanded="false" aria-controls="formulaCollapseFive">
+                    Spreadsheet
+                  </h6>
+                </div>
+                <div id="formulaCollapseFive" class="collapse" aria-labelledby="formulaHeadingFive" data-parent="#formula-accordion">
+                  <div class="card-body">           
+                    <a href="https://docs.google.com/spreadsheets/d/1ahNd-aONntljLc1ULgZjT5cijksa9cIr6KDCltRaA9M/edit?usp=sharing" target="_blank" class="btn btn-primary">View the Spreadsheet</a>
+                    <div>
+                      <iframe 
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTV1rR8vi4wb8dgkIaD7SvrK4gFekKnBlKRBgsqIyhGlhpsYw-lA4PjW_j88ydn6ThehRdgIU_JjNG8/pubhtml?gid=1193379898&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false" 
+                        class="gsheet" 
+                        id="inputs">
+                      </iframe>
+                      <iframe 
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTV1rR8vi4wb8dgkIaD7SvrK4gFekKnBlKRBgsqIyhGlhpsYw-lA4PjW_j88ydn6ThehRdgIU_JjNG8/pubhtml?gid=749081151&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false" 
+                        class="gsheet" 
+                        id="fit">
+                      </iframe>                
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+		<footer class="bg-dark mt-3 pt-4 pb-5 text-light footer">
+			<ul class="nav">
+				<li class="nav-item">
+			    <a class="nav-link text-light" href="mailto:m.r.kronenberg@gmail.com">Email</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-light" href="https://www.linkedin.com/in/mkronenberg/" target="_blank">LinkedIn</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-light" href="https://github.com/mkronenberg" target="_blank">GitHub</a>
+			  </li>
+			</ul>
+		</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

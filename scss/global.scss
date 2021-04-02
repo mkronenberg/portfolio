@@ -1,0 +1,46 @@
+// Bootstrap Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+header {
+    padding: 0 1.5rem 0 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-lockup {
+    position: relative;
+    display: flex;
+}
+
+.logo-icon {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.wordmark-lockup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-name {
+    color: $dark;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.my-name:hover {
+    color: $dark;
+}
+
+.title {
+    color: $text-muted;
+    margin-bottom: 0;
+}

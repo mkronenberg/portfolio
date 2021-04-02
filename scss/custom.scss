@@ -1,0 +1,389 @@
+// Bootstrap Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Custom Imports
+@import "../scss/grids.scss";
+@import "../scss/global.scss";
+
+%icon-embellish {
+    width: 2em;
+    padding: .5em .0 .5em 0;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.gozengo-preview {
+    background-image: url(http://images.michaelkronenberg.com/projects/gozengo/gozengo-project-preview-devices.svg);
+    background-size: contain;
+    background-color: #0387BF;
+    background-blend-mode: multiply;
+}
+
+.article-three-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+
+}
+
+.icon-embellish--primary {
+    @extend %icon-embellish;
+    color: $primary;
+    background: rgba($primary, .2);
+}
+
+.icon-embellish--success {
+    @extend %icon-embellish;
+    color: $success;
+    background: rgba($success, .2);
+}
+
+.icon-embellish--warning {
+    @extend %icon-embellish;
+    color: $warning;
+    background: rgba($warning, .2);
+}
+
+.icon-embellish--info {
+    @extend %icon-embellish;
+    color: $info;
+    background: rgba($info, .2);
+}
+
+.hierarchy {
+    display: flex;
+    align-items: flex-start;
+    height: 7em;
+}
+
+.hierarchy__element {
+    box-sizing: content-box;
+    font-size: 2rem;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+@keyframes shrink {
+    0% {
+        padding: .5em;
+    }
+    25% {
+        padding: .25em;
+    }
+    50% {
+        padding: .25em;
+    }
+    75% {
+        padding: .5em;
+    }
+    100% {
+        padding: .5em;
+    }
+}
+
+@keyframes grow {
+    0% {
+        padding: .5em;
+    }
+    25% {
+        padding: 1em;
+    }
+    50% {
+        padding: 1em;
+    }
+    75% {
+        padding: .5em;
+    }
+    100% {
+        padding: .5em;
+    }
+}
+
+.hierarchy__element--large {
+    padding: 1em;
+    color: $success;
+    background: rgba($success, .2);
+    animation-name: grow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.hierarchy__element--small {
+    padding: .25em;
+    color: $warning;
+    background: rgba($warning, .2);
+    animation-name: shrink;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.gsheet {
+    border: none;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+#inputs {
+    max-width: 245px; 
+    height: 182px; 
+}
+
+#fit {
+    max-width: 839px;
+    height: 258px;
+}
+
+.screenshot-with-caption {
+
+    display: flex;
+    align-items: start;
+    
+    figcaption {
+        display: flex;
+        flex-direction: column;
+        background-color: $gray-100;
+        align-items: start;
+        justify-content: stretch;
+        width: 12em;
+        padding: .75em;
+        order: 2;
+
+        .icon-label-lockup {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding-bottom: .2em;
+        }
+
+            i {
+                font-size: 1.25rem;
+            }
+
+            .label {
+                padding: 0;
+                margin: 0 0 0 .5em;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+        p {
+            color: $text-muted;
+            font-size: .8rem;
+            margin: 0;
+        }
+    }
+
+    .img-div {
+        background-color: $gray-100;
+        width: calc(100% - 12em);
+        order: 1;
+        margin-right: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .multi-base-img {
+            background-image: url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-clear.png"),
+                              url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-hidden.png");
+            background-position: 
+                top 0px left 0px,
+                top 0px left 0px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: background-image 0.5s ease;
+        }
+
+        .multi-base-img:hover {
+            background-image: url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-only.png"),
+                              url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-hidden.png");
+        }
+    }
+}
+
+.scatter-plot {
+    width: 100%;
+    overflow-x: scroll;
+    border: 1px solid $card-border-color;
+    margin: 0 auto;
+}
+
+.engagement-metrics {
+    
+    margin: 1em 0;
+
+    .card {
+
+        .card-header {
+            cursor: pointer;
+
+            dt:hover {
+                text-decoration: underline;
+            }
+ 
+            dd {
+                //display: inline;
+                margin-bottom: 0;
+
+            }
+        }
+
+        
+    }  
+}
+
+.figma-holder {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    background-color: #4F5B67;
+    margin: 2rem 0;
+}
+
+#figma-controls {
+    width: 100%;
+    max-width: 700px;
+    height: 540px;
+    border: none;
+}
+
+.controls-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header-hardware    header-situational"
+        "example-hardware   example-situational"
+        "pro-hardware       pro-situational"
+        "con-hardware       con-situational";
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: $gray-300;
+
+    .header-hardware        {grid-area: header-hardware;}
+    .header-situational     {grid-area: header-situational;}
+    .example-hardware       {grid-area: example-hardware;}
+    .example-situational    {grid-area: example-situational;}
+    .pro-hardware           {grid-area: pro-hardware;}
+    .pro-situational        {grid-area: pro-situational;}
+    .con-hardware           {grid-area: con-hardware;}
+    .con-situational        {grid-area: con-situational;}
+
+    div {
+        border-width: 1px 0 0 1px;
+        border-style: solid;
+        border-color: $gray-300;
+        padding: 1em;
+    }
+
+    .controls-comparison__header {
+        text-align: center;
+        background-color: $light;
+    }
+
+    ul {
+        padding-left: 1.5em;
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: scroll;
+
+        img {
+            margin-right: .5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 624px) {
+
+    .controls-comparison {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header-hardware"
+        "example-hardware"
+        "pro-hardware"
+        "con-hardware"
+        "header-situational"
+        "example-situational"
+        "pro-situational"
+        "con-situational";
+    }
+}
+
+    .formula-overview {
+
+        .card-header {
+            cursor: pointer;
+
+            h6:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 2em;
+        }
+
+        @media only screen and (max-width: 960px) {
+            .comparison {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .article-three-column {
+                grid-gap: 2em;
+            }
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 2em 3em;
+
+            .span-two {
+                grid-column: 1 / span 2;
+            }     
+        }
+
+        .area-compare {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-gap: 0 2em;
+
+            img {
+                width: 100%;
+                height:
+                auto;
+            }
+
+            figcaption {
+                height: 1em;
+            }
+        }
+    }
+
+.admin-user-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 1rem;
+    font-size: .9rem;
+
+    h5, h6 {font-size: .9rem;}
+
+    ul {padding-left: 1.2em;}
+}
