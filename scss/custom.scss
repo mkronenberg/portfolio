@@ -15,7 +15,7 @@
 }
 
 .gozengo-preview {
-    background-image: url(http://images.michaelkronenberg.com/projects/gozengo/gozengo-project-preview-devices.svg);
+    background-image: url(../../images/projects/gozengo/gozengo-project-preview-devices.svg);
     background-size: contain;
     background-color: #0387BF;
     background-blend-mode: multiply;
@@ -190,8 +190,8 @@
         }
 
         .multi-base-img {
-            background-image: url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-clear.png"),
-                              url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-hidden.png");
+            background-image: url("../../images/projects/voyant/conferencing/controls/controls-clear.png"),
+                              url("../../images/projects/voyant/conferencing/controls/controls-hidden.png");
             background-position: 
                 top 0px left 0px,
                 top 0px left 0px;
@@ -201,8 +201,8 @@
         }
 
         .multi-base-img:hover {
-            background-image: url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-only.png"),
-                              url("http://images.michaelkronenberg.com/projects/voyant/conferencing/controls/controls-hidden.png");
+            background-image: url("../../images/projects/voyant/conferencing/controls/controls-only.png"),
+                              url("../../images/projects/voyant/conferencing/controls/controls-hidden.png");
         }
     }
 }
